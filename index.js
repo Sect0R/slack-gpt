@@ -2,9 +2,11 @@ const {App} = require('@slack/bolt');
 const {WebClient} = require('@slack/web-api');
 const {Configuration, OpenAIApi} = require('openai');
 
-require('dotenv').config({
-    path: __dirname + '/.env',
-});
+if (!process.env.IGNORE_DOT_ENV) {
+    require('dotenv').config({
+        path: __dirname + '/.env',
+    });
+}
 
 // init chatGpt lib
 const configuration = new Configuration({
@@ -54,7 +56,7 @@ app.event('app_mention', async ({event}) => {
     // Reply to thread
     await client.chat.postMessage({
         channel: event.channel,
-        thread_ts: !!+process.env.SLACK_SEND_AS_THREAD ? event.ts : undefined,
+        thread_ts: +process.env.SLACK_SEND_AS_THREAD ? event.ts : undefined,
         text: reply.trim(),
     });
 });

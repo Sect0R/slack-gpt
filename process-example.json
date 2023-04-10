@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "slackGpt",
+      "script": "index.js",
+      "autorestart": true,
+      "env": {
+        "LOG_LEVEL": "warn",
+        "IGNORE_DOT_ENV": "1",
+        "SLACK_BOT_TOKEN": "xoxb-your-bot-token",
+        "SLACK_APP_TOKEN": "xapp-1-your-app-token",
+        "SLACK_SEND_AS_THREAD": "1",
+        "SLACK_SIGNING_SECRET": "your-signing-secret",
+        "OPENAI_API_KEY": "your-api-key"
+      },
+      "watch": [
+        "index.js"
+      ]
+    }
+  ]
+}

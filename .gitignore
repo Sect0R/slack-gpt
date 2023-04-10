@@ -1,5 +1,11 @@
 node_modules/
+
 .secret-*
 .idea
+
+process.json
+
 **.sample
-.env
+.env*
+!.env.example
+
