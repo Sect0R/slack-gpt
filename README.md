@@ -46,7 +46,7 @@ To use this app, you'll need to have Node.js and npm installed on your computer.
 
 To get started, clone this repository and install the dependencies:
 
-```  
+```bash  
 git clone https://github.com/Sect0R/slack-gpt.git  
 cd slack-gpt  
 npm install  
