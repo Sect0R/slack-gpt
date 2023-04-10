@@ -9,13 +9,21 @@
   },
   "author": "Your Name",
   "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
   "dependencies": {
     "@slack/bolt": "^3.13.0",
     "@slack/web-api": "^6.8.1",
     "openai": "^3.2.1",
     "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0"
   }
 }

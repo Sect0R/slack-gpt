@@ -1,4 +1,5 @@
+node_modules/
+.secret-*
 .idea
-node_modules
-
+**.sample
 .env
